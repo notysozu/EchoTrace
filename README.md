@@ -7,8 +7,9 @@
 
 **Audio-first historical knowledge platform for immersive time-traveling through sound.**
 
-<!-- AUDIT: Missing tagline and meaningful project description -->
+## Overview
+
+EchoTrace is an immersive audio archive that transforms historical milestones into multi-perspective, spatial soundscapes. By leveraging generative AI to script and synthesize authentic period-specific voices, it allows users to experience "the room where it happened" through the ears of those who lived it. It bridges the gap between static textbooks and cinematic storytelling, providing a lean-back discovery experience for history enthusiasts and students alike.
+
 <!-- AUDIT: Missing standard sections: Features, Install, Usage, Contributing, License -->
 <!-- AUDIT: No technical documentation on the mono-repo structure -->
-
-Historical audio platform.
