@@ -75,5 +75,33 @@ Follow these steps to get your EchoTrace development environment running:
    npm run dev
    ```
 
-<!-- AUDIT: Missing standard sections: Usage, Contributing, License -->
+## Usage
+
+### 🌐 Explore the Timeline
+Open [http://localhost:3000](http://localhost:3000) in your browser to explore the interactive timeline.
+- **Scroll** through historical eras.
+- **Click** on an event to open the perspective switcher.
+- **Listen** to immersive audio narratives while navigating the site.
+
+### 🤖 Trigger AI Generation
+You can generate new immersive content for any historical event via the internal API:
+
+```bash
+curl -X POST http://localhost:8001/v1/events/generate \
+  -H "Content-Type: application/json" \
+  -d '{
+    "event_id": "evt-apollo",
+    "event_name": "Apollo 11",
+    "summary_text": "First humans on the moon.",
+    "era_label": "Space Race"
+  }'
+```
+
+The worker service will automatically:
+1. Write 4 distinct scripts using OpenAI.
+2. Synthesize audio with ElevenLabs.
+3. Mix soundscapes via FFmpeg.
+4. Upload to S3 and notify the frontend.
+
+<!-- AUDIT: Missing standard sections: Contributing, License -->
 <!-- AUDIT: No technical documentation on the mono-repo structure -->
