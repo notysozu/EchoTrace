@@ -117,5 +117,26 @@ EchoTrace uses environment variables for secure API integration and service rout
 | `AWS_REGION` | `us-east-1` | AWS region for S3 bucket operations. |
 | `WORKER_PORT` | `3001` | The internal API port for the Node.js production worker. |
 
-<!-- AUDIT: Missing standard sections: Contributing, License -->
+## Tech Stack
+
+### 📱 Frontend (Web)
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS + Framer Motion
+- **State**: Zustand (Global player) + React Query (Data)
+- **Audio**: Howler.js
+
+### ⚙️ Backend (API)
+- **Framework**: FastAPI (Python 3.12)
+- **Database**: PostgreSQL (SQLAlchemy + Alembic)
+- **Validation**: Pydantic v2
+- **Caching**: Redis
+
+### 🤖 AI Worker
+- **Runtime**: Node.js (TypeScript)
+- **Queues**: BullMQ + Redis
+- **Models**: OpenAI GPT-4o
+- **Voices**: ElevenLabs API
+- **Processing**: FFmpeg
+
+<!-- AUDIT: Contributing, License -->
 <!-- AUDIT: No technical documentation on the mono-repo structure -->
