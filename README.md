@@ -103,5 +103,19 @@ The worker service will automatically:
 3. Mix soundscapes via FFmpeg.
 4. Upload to S3 and notify the frontend.
 
+## Configuration
+
+EchoTrace uses environment variables for secure API integration and service routing.
+
+| Variable | Default | Description |
+|---|---|---|
+| `DATABASE_URL` | `postgresql+asyncpg://...` | Connection URI for the PostgreSQL instance. |
+| `REDIS_URL` | `redis://localhost:6379` | Connection URI for the Redis broker. |
+| `OPENAI_API_KEY` | `required` | Key for automated script generation via GPT-4o. |
+| `ELEVENLABS_API_KEY` | `required` | Key for cinematic voice synthesis. |
+| `S3_BUCKET_NAME` | `echotrace-audio` | Destination bucket for final processed audio assets. |
+| `AWS_REGION` | `us-east-1` | AWS region for S3 bucket operations. |
+| `WORKER_PORT` | `3001` | The internal API port for the Node.js production worker. |
+
 <!-- AUDIT: Missing standard sections: Contributing, License -->
 <!-- AUDIT: No technical documentation on the mono-repo structure -->
