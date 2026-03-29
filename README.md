@@ -173,4 +173,10 @@ We welcome contributions to EchoTrace! To get started:
 
 Check out our [GitHub Issues](https://github.com/notysozu/EchoTrace/issues) for "good first issue" labels.
 
-<!-- AUDIT: License -->
+## License
+
+EchoTrace is released under the [MIT License](LICENSE).
+
+---
+
+*“History is a symphony of perspectives. EchoTrace makes sure you hear every note.”*
