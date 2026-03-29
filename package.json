@@ -1,0 +1,21 @@
+{
+  "name": "echotrace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EchoTrace — Audio-first historical knowledge platform",
+  "workspaces": [
+    "apps/web",
+    "apps/worker"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:api": "cd apps/api && uvicorn main:app --reload --port 8000",
+    "dev:worker": "npm run dev --workspace=apps/worker",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\" \"npm run dev:worker\"",
+    "lint": "npm run lint --workspaces",
+    "build": "npm run build --workspace=apps/web"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
