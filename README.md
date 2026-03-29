@@ -162,4 +162,15 @@ EchoTrace is currently in active development.
 - [ ] **Discovery**: Full-text search and AI-driven era recommendations.
 - [ ] **Streaming**: Adaptive Bitrate Streaming (HLS) for optimized mobile playback.
 
-<!-- AUDIT: Contributing, License -->
+## Contributing
+
+We welcome contributions to EchoTrace! To get started:
+
+1. **Fork** the repository and create your branch from `main`.
+2. **Open an issue** to discuss the change you wish to make.
+3. Ensure your code follows the existing style and all services boot correctly.
+4. Submit a **Pull Request** with a detailed description of your changes.
+
+Check out our [GitHub Issues](https://github.com/notysozu/EchoTrace/issues) for "good first issue" labels.
+
+<!-- AUDIT: License -->
