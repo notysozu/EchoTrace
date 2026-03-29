@@ -151,4 +151,15 @@ EchoTrace/
 └── .env.example      # Global environment template
 ```
 
+## Roadmap
+
+EchoTrace is currently in active development.
+
+- [x] **Phase 1**: Core Frontend & Timeline UI.
+- [x] **Phase 2**: Backend API & Database Schema.
+- [x] **Phase 3**: AI Pipeline (OpenAI + ElevenLabs + FFmpeg).
+- [ ] **Auth**: User profiles and persistent listening history.
+- [ ] **Discovery**: Full-text search and AI-driven era recommendations.
+- [ ] **Streaming**: Adaptive Bitrate Streaming (HLS) for optimized mobile playback.
+
 <!-- AUDIT: Contributing, License -->
