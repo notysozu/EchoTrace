@@ -31,5 +31,49 @@ Before setting up EchoTrace, ensure you have the following installed:
 - **Redis** — Used for job queues and caching.
 - **PostgreSQL** — Primary relational data store.
 
-<!-- AUDIT: Missing standard sections: Install, Usage, Contributing, License -->
+## Installation
+
+Follow these steps to get your EchoTrace development environment running:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/notysozu/EchoTrace.git
+   cd EchoTrace
+   ```
+
+2. **Configure Environment Variables:**
+   Copy the example environment file and fill in your API keys (OpenAI, ElevenLabs, AWS).
+   ```bash
+   cp .env.example .env
+   ```
+
+3. **Start Infrastructure (Docker):**
+   Launch PostgreSQL, Redis, and the FastAPI backend.
+   ```bash
+   docker-compose up -d
+   ```
+
+4. **Install Dependencies:**
+   ```bash
+   # Install root and workspace dependencies
+   npm install
+   
+   # Install Python dependencies for the API
+   cd apps/api && pip install -r requirements.txt && cd ../..
+   ```
+
+5. **Run Database Migrations:**
+   ```bash
+   cd apps/api
+   alembic upgrade head
+   cd ../..
+   ```
+
+6. **Verify Installation:**
+   Run the dev stack and ensure all services boot without errors.
+   ```bash
+   npm run dev
+   ```
+
+<!-- AUDIT: Missing standard sections: Usage, Contributing, License -->
 <!-- AUDIT: No technical documentation on the mono-repo structure -->
