@@ -138,5 +138,17 @@ EchoTrace uses environment variables for secure API integration and service rout
 - **Voices**: ElevenLabs API
 - **Processing**: FFmpeg
 
+## Project Structure
+
+```text
+EchoTrace/
+├── apps/
+│   ├── web/          # Next.js 14 Frontend (React, Zustand, Howler.js)
+│   ├── api/          # FastAPI Backend (Python, SQLAlchemy, Alembic)
+│   └── worker/       # Node.js AI Pipeline (BullMQ, OpenAI, ElevenLabs)
+├── docker-compose.yml # Infrastructure (Postgres, Redis, Backend orchestration)
+├── package.json      # Monorepo workspace configuration
+└── .env.example      # Global environment template
+```
+
 <!-- AUDIT: Contributing, License -->
-<!-- AUDIT: No technical documentation on the mono-repo structure -->
