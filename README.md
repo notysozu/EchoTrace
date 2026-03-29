@@ -84,7 +84,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to explore t
 - **Listen** to immersive audio narratives while navigating the site.
 
 ### 🤖 Trigger AI Generation
-You can generate new immersive content for any historical event via the internal API:
+Generate new immersive content for any historical event via the internal API:
 
 ```bash
 curl -X POST http://localhost:8001/v1/events/generate \
@@ -97,11 +97,11 @@ curl -X POST http://localhost:8001/v1/events/generate \
   }'
 ```
 
-The worker service will automatically:
-1. Write 4 distinct scripts using OpenAI.
-2. Synthesize audio with ElevenLabs.
-3. Mix soundscapes via FFmpeg.
-4. Upload to S3 and notify the frontend.
+The worker service orchestrates the following:
+1. **Scripting**: GPT-4o crafts 4 distinct perspective scripts.
+2. **Synthesis**: ElevenLabs generates high-fidelity voice audio.
+3. **Multiplexing**: FFmpeg blends speech with ambient soundscapes.
+4. **Persistence**: The system uploads assets to S3 and updates the metadata in PostgreSQL.
 
 ## Configuration
 
