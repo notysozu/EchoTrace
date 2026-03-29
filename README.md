@@ -20,5 +20,16 @@ EchoTrace is an immersive audio archive that transforms historical milestones in
 - **Persistent Global Player**: A floating audio engine that maintains playback and state across entire site transitions.
 - **Smart Discovery**: AI-driven categorization by era, topic, and historical significance for tailored knowledge exploration.
 
+## Prerequisites
+
+Before setting up EchoTrace, ensure you have the following installed:
+
+- **Node.js** (v20.x or higher) — [Download](https://nodejs.org/)
+- **Python** (v3.12.x or higher) — [Download](https://www.python.org/)
+- **Docker & Docker Compose** — [Get Docker](https://docs.docker.com/get-docker/)
+- **FFmpeg** — Required for audio multiplexing. [Install Guide](https://ffmpeg.org/download.html)
+- **Redis** — Used for job queues and caching.
+- **PostgreSQL** — Primary relational data store.
+
 <!-- AUDIT: Missing standard sections: Install, Usage, Contributing, License -->
 <!-- AUDIT: No technical documentation on the mono-repo structure -->
